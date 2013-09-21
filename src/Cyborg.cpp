@@ -81,6 +81,6 @@ Cyborg::Cyborg(int argc, char**argv)
 void Cyborg::notice(const CyborgNotice &n)
 {
     //tray->showMessage(tr("Notice from device %1").arg(n.deviceID), n.contents,
-                      QSystemTrayIcon::Information, 10000);
+    //                  QSystemTrayIcon::Information, 10000);
     notifications.notify("Cyborg", -1, "mobile", tr("Notice from device %1").arg(n.deviceID), n.contents, QStringList(), QVariantMap(), 0);
 }
