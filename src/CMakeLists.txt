@@ -1,10 +1,12 @@
 set(CYBORG_CPP_FILES
     Cyborg.cpp
+    DBusNotifications.cpp
     main.cpp
     )
 
 set(CYBORG_H_FILES
     Cyborg.h
+    DBusNotifications.h
     )
 
 qt4_wrap_cpp(CYBORG_MOC_FILES ${CYBORG_H_FILES})

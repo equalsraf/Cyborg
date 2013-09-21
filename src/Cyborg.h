@@ -27,6 +27,7 @@
 #include <QApplication>
 #include <QScopedPointer>
 #include <QMenu>
+#include "DBusNotifications.h"
 
 class QAction;
 class QSystemTrayIcon;
@@ -53,6 +54,9 @@ public:
 
 private slots:
     void notice(const CyborgNotice&);
+
+private:
+	DBusNotifications notifications;
 };
 
 #endif // CYBORG_H
